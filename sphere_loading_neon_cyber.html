@@ -1,0 +1,192 @@
+<header>
+  <style>
+  
+.container {
+  position: absolute;
+  inset: 0;
+  zoom: 0.5;
+
+  .loader {
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    animation: girar 8s linear infinite;
+
+    &,
+    .sphere,
+    .item {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      transform-style: preserve-3d;
+      perspective: 10000px;
+    }
+
+    .sphere,
+    .item {
+      top: 0;
+      left: 0;
+    }
+
+    .sphere {
+      transform: rotate(calc(var(--rot) * 20deg));
+
+      &.sphere1 {
+        --bg: #f008;
+      }
+
+      &.sphere2 {
+        --bg: #f0f8;
+      }
+
+      &.sphere3 {
+        --bg: #ff08;
+      }
+
+      &.sphere4 {
+        --bg: #0f08;
+      }
+
+      &.sphere5 {
+        --bg: #0ff8;
+      }
+
+      &.sphere6 {
+        --bg: #00f8;
+      }
+
+      &.sphere7 {
+        --bg: #dc1ddf88;
+      }
+
+      &.sphere8 {
+        --bg: #ffa50088;
+      }
+
+      &.sphere8 {
+        --bg: #e5b2ca88;
+      }
+    }
+
+    .item {
+      border-radius: 50%;
+      background: var(--bg);
+      transform: rotateY(calc(var(--rot-y) * 40deg));
+    }
+  }
+}
+
+@keyframes girar {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+    
+  </style>
+</header> 
+<section class="container">
+  <section class="loader">
+    <article style="--rot: 0" class="sphere sphere1">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+    <article style="--rot: 1" class="sphere sphere2">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+    <article style="--rot: 2" class="sphere sphere3">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+    <article style="--rot: 3" class="sphere sphere4">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+    <article style="--rot: 4" class="sphere sphere5">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+    <article style="--rot: 5" class="sphere sphere6">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+    <article style="--rot: 6" class="sphere sphere7">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+    <article style="--rot: 7" class="sphere sphere8">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+    <article style="--rot: 8" class="sphere sphere9">
+      <div class="item" style="--rot-y: 1"></div>
+      <div class="item" style="--rot-y: 2"></div>
+      <div class="item" style="--rot-y: 3"></div>
+      <div class="item" style="--rot-y: 4"></div>
+      <div class="item" style="--rot-y: 5"></div>
+      <div class="item" style="--rot-y: 6"></div>
+      <div class="item" style="--rot-y: 7"></div>
+      <div class="item" style="--rot-y: 8"></div>
+      <div class="item" style="--rot-y: 9"></div>
+    </article>
+  </section>
+                                             </section>
+        
